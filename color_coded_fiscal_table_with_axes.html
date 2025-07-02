@@ -1,0 +1,248 @@
+
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Color-Coded Fiscal Table with Axis Labels</title>
+    
+<style>
+body {
+  font-family: system-ui, sans-serif;
+  padding: 60px 20px 20px 20px; /* extra top padding */
+  background-color: #fdfdfd;
+  color: #222;
+  overflow-x: hidden;
+}
+
+h2 {
+  text-align: center;
+  margin-bottom: 20px;
+  font-weight: 600;
+}
+
+table {
+  border-collapse: separate;
+  border-spacing: 0;
+  width: 100%;
+  max-width: 800px;
+  margin: 0 auto;
+  background-color: white;
+  box-shadow: 0 2px 10px rgba(0,0,0,0.06);
+  border-radius: 8px;
+  overflow: visible; /* allow tooltips to escape */
+  position: relative;
+}
+
+td {
+  border: 1px solid #eee;
+  padding: 16px;
+  text-align: center;
+  font-size: 16px;
+}
+
+tr:nth-child(even) {
+  background-color: #fafafa;
+}
+
+tr:hover {
+  background-color: #f0f4f8;
+}
+
+.tooltip {
+  position: relative;
+  display: inline-block;
+  cursor: help;
+  font-weight: 500;
+}
+
+.tooltip .tooltiptext {
+  visibility: hidden;
+  width: 240px;
+  background-color: #333;
+  color: #fff;
+  text-align: center;
+  padding: 10px 12px;
+  border-radius: 6px;
+  position: absolute;
+  z-index: 1000;
+  bottom: 125%; 
+  left: 50%;
+  transform: translateX(-50%);
+  opacity: 0;
+  transition: opacity 0.3s ease-in-out;
+  font-size: 14px;
+  line-height: 1.4;
+  box-shadow: 0 2px 6px rgba(0,0,0,0.25);
+  white-space: normal;
+}
+
+.tooltip:hover .tooltiptext {
+  visibility: visible;
+  opacity: 1;
+}
+</style>
+
+</head>
+<body>
+    <h2>How Much Government Are You Willing to Fund?</h2>
+    <table>
+
+<tr>
+  <td rowspan="2" colspan="1" style="writing-mode: vertical-lr; text-align: center; transform: rotate(180deg); font-weight: bold;">Spending Preference</td>
+  <th colspan="6" style="text-align:center; background-color:#f1f1f1;">Tax Preference</th>
+</tr>
+<tr>
+  <th style="background-color:#f1f1f1;"></th>
+  <th style="background-color:#f1f1f1;">1</th>
+  <th style="background-color:#f1f1f1;">2</th>
+  <th style="background-color:#f1f1f1;">3</th>
+  <th style="background-color:#f1f1f1;">4</th>
+  <th style="background-color:#f1f1f1;">5</th>
+</tr>
+  <tr>
+    <th style="background-color:#f1f1f1;">1</th>
+    <td style="background-color:#e53935; text-align:center;">
+                    <span class="tooltip">A
+                        <span class="tooltiptext">You fund 15.4% of GDP; want 25.7%. Cut spending 40% or raise taxes 67%.</span>
+                    </span>
+                </td>
+    <td style="background-color:#e53935; text-align:center;">
+                    <span class="tooltip">B
+                        <span class="tooltiptext">You fund 17.1% of GDP; want 25.7%. Cut spending 33% or raise taxes 50%.</span>
+                    </span>
+                </td>
+    <td style="background-color:#e53935; text-align:center;">
+                    <span class="tooltip">C
+                        <span class="tooltiptext">You fund 18.8% of GDP; want 25.7%. Cut spending 27% or raise taxes 37%.</span>
+                    </span>
+                </td>
+    <td style="background-color:#e53935; text-align:center;">
+                    <span class="tooltip">D
+                        <span class="tooltiptext">You fund 20.5% of GDP; want 25.7%. Cut spending 20% or raise taxes 25%.</span>
+                    </span>
+                </td>
+    <td style="background-color:#e53935; text-align:center;">
+                    <span class="tooltip">E
+                        <span class="tooltiptext">You fund 22.2% of GDP; want 25.7%. Cut spending 14% or raise taxes 16%.</span>
+                    </span>
+                </td>
+  </tr>
+  <tr>
+    <th style="background-color:#f1f1f1;">2</th>
+    <td style="background-color:#e53935; text-align:center;">
+                    <span class="tooltip">F
+                        <span class="tooltiptext">You fund 15.4% of GDP; want 23.4%. Cut spending 35% or raise taxes 52%.</span>
+                    </span>
+                </td>
+    <td style="background-color:#e53935; text-align:center;">
+                    <span class="tooltip">G
+                        <span class="tooltiptext">You fund 17.1% of GDP; want 23.4%. Cut spending 27% or raise taxes 37%.</span>
+                    </span>
+                </td>
+    <td style="background-color:#e53935; text-align:center;">
+                    <span class="tooltip">H
+                        <span class="tooltiptext">You fund 18.8% of GDP; want 23.4%. Cut spending 20% or raise taxes 24%.</span>
+                    </span>
+                </td>
+    <td style="background-color:#e53935; text-align:center;">
+                    <span class="tooltip">I
+                        <span class="tooltiptext">You fund 20.5% of GDP; want 23.4%. Cut spending 12% or raise taxes 14%.</span>
+                    </span>
+                </td>
+    <td style="background-color:#e53935; text-align:center;">
+                    <span class="tooltip">J
+                        <span class="tooltiptext">You fund 22.2% of GDP; want 23.4%. Cut spending 5% or raise taxes 5%.</span>
+                    </span>
+                </td>
+  </tr>
+  <tr>
+    <th style="background-color:#f1f1f1;">3</th>
+    <td style="background-color:#e53935; text-align:center;">
+                    <span class="tooltip">K
+                        <span class="tooltiptext">You fund 15.4% of GDP; want 21.1%. Cut spending 27% or raise taxes 37%.</span>
+                    </span>
+                </td>
+    <td style="background-color:#e53935; text-align:center;">
+                    <span class="tooltip">L
+                        <span class="tooltiptext">You fund 17.1% of GDP; want 21.1%. Cut spending 19% or raise taxes 23%.</span>
+                    </span>
+                </td>
+    <td style="background-color:#e53935; text-align:center;">
+                    <span class="tooltip">M
+                        <span class="tooltiptext">You fund 18.8% of GDP; want 21.1%. Cut spending 11% or raise taxes 12%.</span>
+                    </span>
+                </td>
+    <td style="background-color:#a5d6a7; text-align:center;">
+                    <span class="tooltip">N
+                        <span class="tooltiptext">You fund 20.5% of GDP; want 21.1%. Cut spending 3% or raise taxes 3%.</span>
+                    </span>
+                </td>
+    <td style="background-color:#a5d6a7; text-align:center;">
+                    <span class="tooltip">O
+                        <span class="tooltiptext">You fund 22.2% of GDP; want 21.1%. Balanced budget with surplus.</span>
+                    </span>
+                </td>
+  </tr>
+  <tr>
+    <th style="background-color:#f1f1f1;">4</th>
+    <td style="background-color:#e53935; text-align:center;">
+                    <span class="tooltip">P
+                        <span class="tooltiptext">You fund 15.4% of GDP; want 18.7%. Cut spending 18% or raise taxes 22%.</span>
+                    </span>
+                </td>
+    <td style="background-color:#e53935; text-align:center;">
+                    <span class="tooltip">Q
+                        <span class="tooltiptext">You fund 17.1% of GDP; want 18.7%. Cut spending 9% or raise taxes 9%.</span>
+                    </span>
+                </td>
+    <td style="background-color:#fdd835; text-align:center;">
+                    <span class="tooltip">R
+                        <span class="tooltiptext">You fund 18.8% of GDP; want 18.7%. Nearly balanced budget.</span>
+                    </span>
+                </td>
+    <td style="background-color:#a5d6a7; text-align:center;">
+                    <span class="tooltip">S
+                        <span class="tooltiptext">You fund 20.5% of GDP; want 18.7%. Balanced budget with surplus.</span>
+                    </span>
+                </td>
+    <td style="background-color:#66bb6a; text-align:center;">
+                    <span class="tooltip">T
+                        <span class="tooltiptext">You fund 22.2% of GDP; want 18.7%. Large surplus.</span>
+                    </span>
+                </td>
+  </tr>
+  <tr>
+    <th style="background-color:#f1f1f1;">5</th>
+    <td style="background-color:#e53935; text-align:center;">
+                    <span class="tooltip">U
+                        <span class="tooltiptext">You fund 15.4% of GDP; want 17.6%. Cut spending 12% or raise taxes 14%.</span>
+                    </span>
+                </td>
+    <td style="background-color:#e53935; text-align:center;">
+                    <span class="tooltip">V
+                        <span class="tooltiptext">You fund 17.1% of GDP; want 17.6%. Cut spending 3% or raise taxes 3%.</span>
+                    </span>
+                </td>
+    <td style="background-color:#a5d6a7; text-align:center;">
+                    <span class="tooltip">W
+                        <span class="tooltiptext">You fund 18.8% of GDP; want 17.6%. Balanced budget with small surplus.</span>
+                    </span>
+                </td>
+    <td style="background-color:#66bb6a; text-align:center;">
+                    <span class="tooltip">X
+                        <span class="tooltiptext">You fund 20.5% of GDP; want 17.6%. Large surplus.</span>
+                    </span>
+                </td>
+    <td style="background-color:#66bb6a; text-align:center;">
+                    <span class="tooltip">Y
+                        <span class="tooltiptext">You fund 22.2% of GDP; want 17.6%. Large surplus.</span>
+                    </span>
+                </td>
+  </tr>
+</table>
+
+    <p style="text-align: center; font-size: 0.9em; color: #555; max-width: 700px; margin: 20px auto;">
+        Hover over each letter to see what your fiscal choice says about your preferred size of government.
+    </p>
+</body>
+</html>
