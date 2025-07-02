@@ -1,0 +1,73 @@
+
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Interactive Fiscal Table</title>
+    <style>
+        table {
+            border-collapse: collapse;
+            width: 100%;
+            font-family: Arial, sans-serif;
+            text-align: center;
+        }
+        td, th {
+            border: 1px solid #ddd;
+            padding: 10px;
+        }
+        td span {
+            cursor: help;
+        }
+        tr:nth-child(even) {background-color: #f9f9f9;}
+        tr:hover {background-color: #f1f1f1;}
+    </style>
+</head>
+<body>
+    <h2>How Much Government Are You Willing to Fund?</h2>
+    <table border='1' cellpadding='6' cellspacing='0' style='border-collapse: collapse;'>
+  <tr>
+    <td>1</td>
+    <td><span title="You fund 15.4% of GDP; want 25.7%. Cut spending 40% or raise taxes 67%.">A</span></td>
+    <td><span title="You fund 17.1% of GDP; want 25.7%. Cut spending 33% or raise taxes 50%.">B</span></td>
+    <td><span title="You fund 18.8% of GDP; want 25.7%. Cut spending 27% or raise taxes 37%.">C</span></td>
+    <td><span title="You fund 20.5% of GDP; want 25.7%. Cut spending 20% or raise taxes 25%.">D</span></td>
+    <td><span title="You fund 22.2% of GDP; want 25.7%. Cut spending 14% or raise taxes 16%.">E</span></td>
+  </tr>
+  <tr>
+    <td>2</td>
+    <td><span title="You fund 15.4% of GDP; want 23.4%. Cut spending 35% or raise taxes 52%.">F</span></td>
+    <td><span title="You fund 17.1% of GDP; want 23.4%. Cut spending 27% or raise taxes 37%.">G</span></td>
+    <td>H </td>
+    <td><span title="You fund 20.5% of GDP; want 23.4%. Cut spending 12% or raise taxes 14%.">I</span></td>
+    <td><span title="You fund 22.2% of GDP; want 23.4%. Cut spending 5% or raise taxes 5%.">J</span></td>
+  </tr>
+  <tr>
+    <td>3</td>
+    <td><span title="You fund 15.4% of GDP; want 21.1%. Cut spending 27% or raise taxes 37%.">K</span></td>
+    <td><span title="You fund 17.1% of GDP; want 21.1%. Cut spending 19% or raise taxes 23%.">L</span></td>
+    <td><span title="You fund 18.8% of GDP; want 21.1%. Cut spending 11% or raise taxes 12%.">M</span></td>
+    <td><span title="You fund 20.5% of GDP; want 21.1%. Cut spending 3% or raise taxes 3%.">N</span></td>
+    <td><span title="You fund 22.2% of GDP; want 21.1%. Balanced budget with surplus.">O</span></td>
+  </tr>
+  <tr>
+    <td>4</td>
+    <td><span title="You fund 15.4% of GDP; want 18.7%. Cut spending 18% or raise taxes 22%.">P</span></td>
+    <td>Q </td>
+    <td><span title="You fund 18.8% of GDP; want 18.7%. Nearly balanced budget.">R</span></td>
+    <td><span title="You fund 20.5% of GDP; want 18.7%. Balanced budget with surplus.">S</span></td>
+    <td><span title="You fund 22.2% of GDP; want 18.7%. Large surplus.">T</span></td>
+  </tr>
+  <tr>
+    <td>5</td>
+    <td><span title="You fund 15.4% of GDP; want 17.6%. Cut spending 12% or raise taxes 14%.">U</span></td>
+    <td><span title="You fund 17.1% of GDP; want 17.6%. Cut spending 3% or raise taxes 3%.">V</span></td>
+    <td><span title="You fund 18.8% of GDP; want 17.6%. Balanced budget with small surplus.">W</span></td>
+    <td><span title="You fund 20.5% of GDP; want 17.6%. Large surplus.">X</span></td>
+    <td><span title="You fund 22.2% of GDP; want 17.6%. Large surplus.">Y</span></td>
+  </tr>
+</table>
+    <p style="font-size: 0.9em; color: #555;">
+        Hover over each cell to see what your choice implies about fiscal policy preferences.
+    </p>
+</body>
+</html>
